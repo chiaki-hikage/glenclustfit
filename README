@@ -1,0 +1,18 @@
+This code gives the (off-)centring probabilities of redMaPPer clusters 
+around different center proxies (e.g., redMaPPer central galaxies, brightest member galaxies)
+from the galaxy clustering and galaxy-galaxy lensing measurements.
+
+This code uses the Cosmological Monte Carlo (CosmoMC) to get likelihoods
+  https://www.cosmologist.info/cosmomc
+ 
+
+1. Run the following shell script to prepare for the input files for MCMC.
+
+ sh prepare.sh
+
+2. Run the cosmomc 
+ 
+ mpirun -n 1 ./cosmomc params.ini
+
+
+References: C. Hikage et al. MNRAS 480 (2018) 480 2689-2697 (arXiv:1702.08614)
